@@ -1,0 +1,125 @@
+html {
+    font-family:'Montserrat', sans-serif;
+
+}
+
+
+body {
+
+    height:100vh;
+    width:100%;
+    background:rgb(64, 25, 101);
+
+
+}
+.table{
+
+    display:grid;
+    background-image:url(https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2018/12/c%C3%B3digos-html-prontos.jpg);
+    justify-content:center;
+    align-items:center;
+    grid-gap:20px;
+    grid-template-columns:100px 100px 100px;
+    grid-template-rows:100px 100px 100px;
+    width:1800px;
+    height:500px;
+
+}
+
+
+
+.h1 {
+    width:100%;
+    text-align:center;
+    color:white;
+    padding:0.5em 0 0.5em 0;
+    align-items:center;
+    position:relative;
+    right:10px;
+
+}
+
+
+
+.card {
+    display: grid;
+    height:100px;
+    width:100px;
+    transition:all 1s linear;
+    transform-style:preserve-3d;
+
+
+
+
+
+}
+
+
+
+.front,
+.back{
+
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    border:1px solid orange;
+    border-radius:10px;
+    margin:0.5em;
+    position:absolute;
+    font-family:'Montserrat', sans-serif;
+    font-size:15px;
+    text-align: -webkit-center;
+    height:100%;
+    width:100%;
+
+
+}
+
+
+
+
+
+.front{
+    background:rgb(250, 248, 246);
+    text-align:center;
+    border:1px solid orange;
+    border-radius:10px;
+    margin:0.5em;
+    z-index:2;
+    color:chocolate;
+    height:100px;
+    width:100px;
+
+
+
+}
+
+
+
+.back{
+    background:rgb(249, 186, 68);
+    z-index:1;
+    text-align:center;
+    border:1px solid orange;
+    border-radius: 10px;
+    margin:0.5em;
+    color:black;
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+    height:100px;
+    width:100px;
+
+
+
+
+}
+
+
+.conteiner:hover .card{
+
+    transform:rotateY(180deg);
+
+
+
+}
+
